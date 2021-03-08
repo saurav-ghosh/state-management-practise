@@ -12,7 +12,8 @@ const CountryDetail = () => {
         fetch(url)
             .then(res => res.json())
             .then(data => setCountry(data[0]))
-    }, [])
+    }, [name]);
+
     return (
         <div className="detail">
             <Card style={{ width: '18rem'}}>
